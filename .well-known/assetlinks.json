@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.kairos.ihw.xbingo.x_bingo",
+    "sha256_cert_fingerprints":
+    ["40:D7:DA:4C:F1:57:06:5F:62:F2:4A:2F:B8:20:57:BE:DD:4C:9C:78:93:DE:AE:AC:D0:78:6E:FA:6C:8E:6C:4A"]
+  }
+}]
