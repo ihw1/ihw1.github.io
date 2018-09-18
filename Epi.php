@@ -11,21 +11,10 @@ class Epi
 {
   private static $properties = array('exceptions-setting' => false, 'debug-setting' => false);
   private static $manifest = array(
-    '*' => array('base','route','template','cache','session','database'),
+    '*' => array('base','route','template'),
     'api' => array('EpiApi.php', 'route'),
     'base' => array('EpiException.php'),
-    'cache' => array('base', 'EpiCache.php', 'cache-apc', 'cache-memcached'),
-    'cache-apc' => array('base', 'EpiCache.php', 'EpiCache_Apc.php'),
-    'cache-memcached' => array('base', 'EpiCache.php', 'EpiCache_Memcached.php'),
-    'config' => array('base', 'EpiConfig.php'),
-    'database' => array('base', 'EpiDatabase.php'),
-    'debug' => array('EpiDebug.php'),
     'route'  => array('base', 'EpiRoute.php'),
-    'session' => array('base', 'EpiSession.php', 'session-php', 'session-apc', 'session-memcached'),
-    'session-php' => array('base', 'EpiSession.php', 'EpiSession_Php.php'),
-    'session-apc' => array('base', 'EpiSession.php', 'EpiSession_Apc.php'),
-    'session-memcached' => array('base', 'EpiSession.php', 'EpiSession_Memcached.php'),
-    'template' => array('base', 'EpiTemplate.php'),
   );
   private static $included = array();
   public static function init()
